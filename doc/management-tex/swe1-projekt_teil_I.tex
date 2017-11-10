@@ -1,0 +1,478 @@
+% !TEX encoding = Windows Latin 1
+
+
+%
+% Legt die Grundstruktur bzw. die Art des Dokuments sowie die Standardschriftgr"a"ae fest.
+%
+\documentclass[11pt]{article}
+
+%
+% Legt das Seitenlayout fest.
+%
+\usepackage[a4paper, margin=1.0in]{geometry}
+
+%
+% Legt die verwendete Schrift fest.
+%
+\usepackage{times}
+
+%
+% Legt die Worttrennungsregeln fest.
+%
+\usepackage[ngerman]{babel}
+
+%
+% Legt die Eingabekodierung fest.
+%
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+
+%
+% Erm"aglicht die Darstellung von Farben sowie die Bezeichnung von Farben durch Namen.
+%
+\usepackage[usenames, dvipsnames]{color}
+
+%
+% Erm"aglicht das Einf"agen von Grafiken.
+%
+\usepackage{graphicx}
+
+%
+% Erleichtert die Darstellung von URLs.
+%
+\usepackage{url}
+
+%
+% Erlaubt die Bearbeitung von Bilder-, Diagramm- und Tabellenunterschriften.
+%
+\usepackage[hang, normalsize, bf]{caption}
+
+%
+% Legt fest, dass die AMS-Symbole benutzt werden.
+%
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%
+% Erm"aglicht die Verwendung von vielen mathematischen Symbolen.
+%
+\usepackage{mathabx}
+
+%
+% Erm"aglicht die Verwendung der \today-Anweisung.
+%
+\usepackage[nodayofweek]{datetime}
+
+% Erleichtert die Formattierung von Quelltexten.
+\usepackage{listings}
+
+%
+% Erm"aglicht die einfachere Bearbeitung von Tabellen.
+%
+\usepackage{tabularx}
+
+%
+% Erm"aglicht die Darstellung von Tabellen auf mehreren Seiten (s. Dokumentation).
+%
+\usepackage{ltxtable}
+
+%
+% Erm"aglicht, Appendices in das Inhaltverzeichnis zu "abernehmen.
+%
+\usepackage[toc]{appendix}
+
+%
+% Erm"aglicht das Zusammenf"agen mehrerer Zeilen einer Tabelle.
+%
+\usepackage{multirow}
+
+%
+% Legt fest, welche Sprache in der Bibliographie verwendet werden soll.
+%
+%\usepackage[fixlanguage]{babelbib}
+
+%
+% Legt PDF-Format: PDF-A-1a fest
+%
+\usepackage[a-1a]{pdfx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                              %
+% Einstellungen                                                                %
+%                                                                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% einstellungen: url
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\urlstyle{tt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% einstellungen: bibliographie
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\selectbiblanguage{german}
+%\bibliographystyle{babplain}
+\bibliographystyle{alpha}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                              %
+% ANWEISUNGEN                                                                  %
+%                                                                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\parskip}{1.5ex plus 0.5ex minus 0.5ex}
+\setlength{\parindent}{0em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% anweisungen: r"amische zahlen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatletter
+\newcommand{\rmnum}[1]{\romannumeral #1}
+\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                              %
+% DOKUMENT                                                                     %
+%                                                                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\inputencoding{latin1}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% dokument: titelblatt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+
+  %
+  % university logo
+  %
+
+  \begin{flushright}
+    \includegraphics[scale=0.75, keepaspectratio=true]{data/fig/logo.pdf}
+  \end{flushright}
+
+  %
+  % university, department & lecture info
+  %
+
+  \begin{center}
+    \ \\
+    \textsc{\Large
+      Universit"at Potsdam, \\Institut f"ur Informatik \\
+      \ \\
+      \ \\
+      Software Engineering, WiSe 2017-18 \\
+      \ \\
+      \ \\
+      Projektarbeit -- Teil I \\
+      \ \\
+      \ \\
+    }
+    {\huge \bfseries
+      SharedBox Ultimate \\
+    }
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+    \ \\
+
+    %
+    % author & supervisors
+    %
+
+    \large
+    \begin{tabularx}{\textwidth}{ l X X }
+      \emph{Autoren}:	&                   &	\emph{Betreuer}:        \\
+                  	&                   &                           \\
+      Vorname Name	& (Mat-Nr.\ 123456) &	Prof. Dr.\ Christian Hammer \\
+      Vorname Name	& (Mat-Nr.\ 123456) &	M. Sc.  Sascha Gross \\
+      Vorname Name	& (Mat-Nr.\ 123456) &	Günther Wullaert  \\
+      Vorname Name	& (Mat-Nr.\ 123456) &	Juliane Scherlitzki    \\
+      Vorname Name	& (Mat-Nr.\ 123456) &	 \\
+    \end{tabularx}
+
+    \vfill
+    {\Large \today}
+  \end{center}
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% dokument: inhaltsverzeichnis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents{}
+\newpage{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% dokument: kapitel
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Daten}
+In diesem Abschnitt sollen die wichtigsten Daten zu dem Projekt dargestellt
+werden. Dazu z"ahlen Beginn und Ende des Projektes, beteiligte Personen
+innerhalb des Projekt-Teams und beteiligte Personen au"serhalb des Projekt-Teams.
+
+\subsection{Teilnehmer}
+Folgende Tabelle kann als Vorlage verwendet werden:
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Name} &\textbf{Vorname} & \textbf{Position} &\textbf{intern/extern} &
+\textbf{Kontakt (E-Mail)}\\\hline
+Jenkins & Joe     & Team-Leader            & intern &\\\hline
+Kloth   & Michael & Modellierer            & intern &\\\hline
+Setsche & Gregor  & Programmierer          & intern &\\\hline
+Gruber  & Stephan & Projekt-Manager        & intern &\\\hline
+M"uller & Anton   & Auftraggeber           & extern &\\\hline
+Mendel  & Juliane & Leitende Endanwenderin & extern &\\\hline
+\end{tabular}
+
+Externe beteiligte Personen k"onnen wichtig sein, wenn konkrete Absprachen
+bez"uglich der Benutzung (User Stories) gekl"art werden m"ussen.
+
+Wichtig ist, zu beachten, dass pers"onliche Daten vertraulich behandelt werden.
+
+\section{Scope Management}
+Das Scopemanagement besch"aftigt sich mit der Bestimmung welche
+Arbeit zum und welche Arbeit nicht zum Projekt geh"ort. So l"asst sich der
+Prozess in folgende Hauptprozesse \cite{SCHW09} unterteilen:
+\begin{itemize}
+  \item Bestimmung aller Anforderungen,
+  \item Definition der Aufgabendefinition,
+  \item Work Breakdown Structure erstellen,
+  \item Pr"ufen und Kontrolle der Aufgaben.
+\end{itemize}
+
+
+\subsection{Aufgabendefinition}
+Zur Bestimmung der Anforderungen ist eine Analyse des Anforderungsdokuments
+n"otig. Aus dieser sollte hervorgehen welche Aufgaben gemacht werden m"ussen, bis wann diese gemacht werden m"ussen und zu welchem Preis. Der Preis spielt
+hier in diesem speziellen Projekt keine Rolle. Die o.g. Aufgaben sollten so
+fein wie m"oglich aufgeteilt werden, um sp"ater eine gute Aufgabenverteilung
+zu erreichen. Im letzten Schritt werden die erstellten Anforderungen "uberpr"uft
+und die laufende Arbeit bez"uglich dieser kontrolliert.
+
+\section{Qualit"atsmanagement}
+In diesem Abschnitt wird beschrieben, wie die Qualit"at der Projektergebnisse
+sichergestellt wurde. Wichtige Aspekte sind dabei der Grad der Konformit"at zu
+den Anforderungen und die Eignung zur Nutzung. Dabei ist zu beschreiben, wie
+sichergestellt wurde, dass die Projekt-Prozesse und die (Teil-) Ergebnisse, die
+durch die Anforderung beschriebene Spezifikation erf"ullen. Beziehungsweise wie
+sichergestellt wurde, dass das Produkt so wie vorgesehen genutzt werden kann.
+
+Im Qualit"atsmanagement gibt es unter Anderem folgende wichtige Prozesse, die
+vom Manager ausgef"uhrt werden m"ussen:
+\begin{itemize}
+  \item Qualit"at Planung
+  \item Qualit"at Sicherung
+  \item Qualit"at Kontrolle
+\end{itemize}
+
+\subsection{Qualit"at Planung}
+Hier sollen die f"ur das Projekt relevanten Qualit"ats-Standards identifiziert
+werden. Dazu z"ahlt zum Beispiel die "Ubersichtlichkeit und Intuitivit"at von
+Diagrammen.
+
+\subsection{Qualit"at Sicherung}
+Hier soll beschrieben werden, wie die Qualit"at der Ergebnisse gesichert wurde.
+Beispielsweise k"onnten die Teilergebnisse auf die Erf"ullung der
+Qualit"ats-Eigenschaften in konkreten Abst"anden "uberpr"uft worden sein.
+
+Wichtige Aspekte der Qualit"at sind die Funktionalit"at (Wurden die vorgesehenen
+Funktionen integriert?), die Features (Wurden W"unsche von Endanwendern, die die
+Benutzbarkeit betreffen erf"ullt?), Outputs (Sind Ausgaben, die das System macht
+f"ur einen Benutzer (intuitiv) verst"andlich?) , Performanz
+(Wie gut/schnell/effizient f"uhrt das System die Prozesse aus?),
+Zuverl"assigkeit (Arbeitet das Produkt bei gew"ohnlicher Nutzung einwandfrei)
+und Wartbarkeit.
+
+Wichtig ist nat"urlich auch, ob aufgrund nicht erf"ullter
+Qualit"ats-Eigenschaften das Projekt angepasst oder Teile erneut erarbeitet
+werden mussten und welche Ursachen zu der ungen"ugenden Qualit"at f"uhrten.
+
+\subsection{Qualit"at Kontrolle}
+Wurden die Sicherungsma"snahmen auch ausgef"uhrt und in welcher Weise wurde dies
+dokumentiert?
+
+\section{Personal Management}
+Das Personalmanagement umfasst die Prozesse, die erforderlich sind, um einen
+m"oglichst effektiven Einsatz der am Projekt beteiligten Mitarbeiter zu
+organisieren.
+
+Hauptprozesse \cite{SCHW09} sind:
+\begin{itemize}
+  \item Erstellung eines Planes zur Mitarbeiterentwicklung,
+  \item Zusammenstellung des Projektteams,
+  \item Entwicklung des Projektteams,
+  \item Verwaltung des Projektteams.
+\end{itemize}
+
+\subsection{Aufgabenverteilung}
+In diesem Abschnitt besch"aftigt man sich mit der Verwaltung der Mitarbeiter,
+die zur Verf"ugung standen und wie und aus welchem Grund sie in der
+konkreten Art und Weise eingesetzt wurden.
+
+Hierbei ist zu beschreiben, welche Projekt-Mitglieder wof"ur eingesetzt wurden
+und wie hoch die Arbeitslast geplant war. Ein wichtiger Gesichtspunkt sind die
+Fertigkeiten und die Erfahrung, die die Projekt-Mitglieder haben und wie diese
+genutzt wurden, um das Projekt fertigzustellen.
+Mussten die Mitglieder eingearbeitet werden? Inwieweit wurde dies vom Management
+unterst"utzt?
+
+Es gibt Personen, die aufgrund ihres Auftretens auf andere Mitarbeiter Vertrauen
+und F"uhrungsqualit"at/Autorit"at ausstrahlen. Wurden solche Personen genutzt,
+um den Gruppenzusammenhalt zu f"ordern?
+
+Wurden Konzepte zur Motivation angewandt, um den Arbeitswillen zu unterst"utzen?
+Wie wurde verhindert, dass einzelne Projekt-Mitglieder "uberlastet werden?
+
+Wurden Teilgruppen gebildet, um das Projekt in kleinere Teile aufl"osen zu
+k"onnen? Wie wurde sichergestellt, dass die Zusammenarbeit zwischen den
+Teilgruppen funktioniert?
+
+Mussten w"ahrend der Laufzeit des Projektes weitere Mitarbeiter in das
+Projekt-Team integriert werden. Wie wurde verhindert, dass die Synergien
+innerhalb der Gruppe gest"ort wurden?
+
+\section{Time Management}
+Das Time Management besch"aftigt sich mit dem zeitlichen Ablauf eines Projektes.
+Es beschreibt die Prozesse, welche notwendig sind, um das Projekt p"unktlich zu
+liefern. Dazu geh"oren folgende Hauptprozesse \cite{SCHW09}:
+\begin{itemize}
+  \item Definition der Aktivit"aten,
+  \item Bestimmung der Abh"angigkeiten zwischen den Aktivit"aten,
+  \item Absch"atzung der Ressourcen f"ur jede Aktivit"at,
+  \item Absch"atzung der Dauer der Aktivit"aten,
+  \item Entwurf eines Zeitplans,
+  \item Kontrolle des Zeitplans.
+\end{itemize}
+Die Definition von Aktivit"aten bezieht sich auf Erstellung von Teilen (nicht
+nur Teilsystemen) der Gesamtaufgabe. Als n"achsten Schritt m"ussen zeitliche
+Abh"angigkeiten
+zwischen den Aktivit"aten "uberpr"uft und im Nachhinein bei der Erstellung des
+Zeitplans ber"ucksichtigt werden. Als n"achsten Schritt macht man eine
+Aufwandssch"atzung zur Bestimmung der ben"otigten Ressourcen (z.B. Arbeiter,
+Equipment) und der Aktivit"atsdauer. Stellen Sie einen Bezug zu den Ressourcen
+her. Auf der Basis der vorher beschriebenen Voraussetzungen erstellt man einen
+Zeitplan, welcher alle Anforderung erf"ullt. Hierf"ur werden oft zeitliche
+Diagramme in Form von Tabellen oder Gantt-Charts erstellt. Als letztes bleibt
+nur noch die laufende "Uberpr"ufung der Einhaltung von Meilensteinen und ggf.
+eine Anpassung des Zeitplans.
+
+\subsection{Aufwandssch"atzung}
+
+\subsection{Projektplan}
+
+\subsection{Soll/Ist Vergleich}
+
+\section{Besonderheiten}
+
+\subsection{Beziehungen zwischen den Aufgabenteilen}
+In diesem Kapitel werden die Besonderheiten des Projekts festgehalten. Der
+Projektleiter soll dokumentieren, welche Auff"alligkeiten bemerkbar geworden
+sind. Dazu z"ahlen die Zusammenh"ange in dem Projekt zwischen den einzelnen
+Aufgaben. Wenn eine Aufgabe mit einer anderen sich sehr gut kombinieren l"asst,
+oder sogar bei der Anfertigung Synergie Effekte entstehen (die Qualit"at der
+nachfolgenden Aufgabe verbessert sich erheblich, oder der Zeitaufwand wird
+geringer), dann geh"oren diese Beobachtungen in diesen Abschnitt.
+
+Desweiteren ist es ratsam die Auff"alligkeiten in diesem Kapitel zu beschreiben
+. Es ist wichtig zu identifizieren, wie sich das Verhalten der Auftraggeber auf
+den Projektverlauf widergespiegelt hat. Wenn diese zum Beispiel nur schwammige
+Antworten gegeben haben, welche die Arbeit nur verz"ogert haben, soll dieses
+festgehalten werden.
+
+\subsection{Externe Verz"ogerungen}
+Externe Faktoren geh"oren ebenso in diesen Abschnitt. Unter externen Faktoren
+kann die Einflussnahme von h"oherer Gewalt (Wetterbedingungen, Stromunterbrechung
+usw.) mit einbezogen werden.  Eine Intervention seitens des Auftraggeber oder
+dritter, welche erheblichen Einfluss auf die Projektplanung und den Verlauf haben,
+kann hier beschrieben werden.
+
+Die Besonderheiten der politischen und ethischen Seite des Projekts werden
+aufgenommen. Es k"onnen Projekte im milit"arischen oder medizinischen Bereich
+stattfinden, welche besondere Auflagen seitens des Gesetzgebers mit sich bringen
+und wodurch au"serordentliche Rahmenbedingungen entstehen.
+
+\section{Organisation}
+
+\subsection{Abrechnung des Time- und Ressourcenmanagements}
+In diesem Abschnitt werden die organisatorischen Einzelheiten des Projekts
+festgehalten. In erster Linie ist das Verhalten der Teilnehmer zu beschreiben.
+Die Fragen: Wie p"unktlich sind die Mitarbeiter? Wie oft gab es Verz"ogerungen?
+Wurden die Aufgaben in angemessener Qualit"at erledigt? sind hier zu beantworten.
+In diesem Zusammenhang kann kurz auf die Struktur der Aufgabenpakete eingegangen
+werden, die Aufteilung der einzelnen Aufgaben und das Ma"s der Produktivit"at
+definiert werden. Der angefertigte Stundenzettel der Mitarbeitern dient hier
+als Grundlage.
+
+\subsubsection{Stundenzettel}
+Angaben zu den Arbeitszetteln von den Mitarbeitern sowie Aufnahme der
+Arbeitsaufteilung. Beschreibung der ausgew"ahlten Methode zur Erfassung
+der Arbeitszeit.
+
+\subsection{Kommunikations- und Toolplanung}
+Ein weiterer Aspekt ist die Kommunikation in der Gruppe. Wie wurde diese
+organisiert? Gab es regelm"a"sige Treffen oder nur ein Kick-Off Meeting
+und dann nur eMail basierte Kommunikation? Erfolgte die Kommunikation nur
+"uber eMail, oder wurden Skype, ICQ, Foren oder anderen Kommunikationsmittel
+eingesetzt? Wurde ein interner Gruppenleiter bestimmt und der Kontakt zur
+Gruppe erfolgte "uber ihn, oder gab es direkte Kommunikation mit dem
+Projektmanager? Wie setzten sich die Mitglieder der Gruppe untereinander
+in Verbindung? Diese und weitere Fragen zur Kommunikation in der Gruppe
+sollten in diesem Kapitel behandelt werden.
+
+Das Ziel des Kommunikationsmanagement ist es im Rahmen des Projekts
+rechtzeitig und angemessen die Erzeugung, Sammlung, Verbreitung, Speicherung
+und L"oschung von Projektinformationen zu gew"ahrleisten.
+
+Hauptprozesse \cite{SCHW09} sind:
+\begin{itemize}
+  \item Projektbeteiligte identifizieren,
+  \item Planung der Kommunikation,
+  \item Verbreitung von Informationen,
+  \item Steuerung der Erwartungen der Projektbeteiligten,
+  \item Bericht "uber die Leistungen.
+\end{itemize}
+
+\subsection{Urlaub und Krankheit}
+Im Anschluss zu dem Kommunikationsaspekt soll auch die Verf"ugbarkeit der
+Projektteilnehmer festgehalten werden.  Die Teilnehmer k"onnten Urlaub haben
+oder "uber einen l"angeren Zeitraum krank werden und somit f"ur die Arbeit
+nicht zur Verf"ugung stehen. Diese Details sollten ebenso in diesem Abschnitt
+dokumentiert werden.
+
+\section{Anhang}
+In dem Anhang befinden sich alle angefertigten Unterlagen und Diagramme
+welche vom Projektmanager w"ahrend der Projektlaufzeit zusammengestellt
+wurden. Des Weiteren k"onnen die Ausgaben der Projektmanagement Software
+hier mit aufgef"uhrt werden.
+
+Unter Anderem geh"oren auch die Protokolle, Stundenzettel, Gantt Chart
+Diagramme, Arbeitspaket Beschreibungen der jeweiligen Woche und weitere
+Unterlagen auch in diesen Abschnitt.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% dokument: bibliographie
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{Literatur}
+\bibliography{swe1-projekt}
+
+
+
+\end{document}
