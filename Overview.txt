@@ -1,0 +1,47 @@
+SharedBoxUltimate
+
+
+Scopemanagement
+Ich würde sagen wir gehen nach dem Agilen Prinzip vor, erstellen einen groben Projektplan,
+am besten eine Art Skizze, mit so Kugeln und Strichen, wo man sieht wie alles zusammenhängt, 
+und erstellen grobe Anforderungsdefinitionen für die einzelnen Funktionen, ähnlich der in den 
+Folien propagierten "Karteikarten". Diese kann man dann den einzelnen Teammitgliedern, also
+uns, zuweisen, und die Aufgaben so klar bestimmen und verteilen.
+Nach dem agilen Prinzip können wir dann in sogenannten Sprints, die uns zugeteilten Aufgaben
+bearbeiten. Nach jedem Sprint gibt es eine Rücksprache mit dem Kunden und wir können das System
+inkrementell anpassen und verfeinern, bis zur Produktreife.
+
+Zeitplanung
+Vorraussetzung: Cocomo/Functionpoint Verfahren. (Teil des Scopes?)
+Ganttchart:	
+	Illustration der Sprints
+	Wieviele Sprints werden vorraussichtlich benötigt?
+	Prozentuale Einteilung der Sprints in Implementierung ausstehehender Features und Anpassung an Kundenwünsche
+	sowie Bearbeitung ausstehender Tickets, z.b. Bugfixes?
+	Strukturierung der ersten Sprints bei evtl. Abhängigkeiten
+	Wie lange soll ein Sprint dauern? 2 Wochen?
+
+Kommunikationsplanung
+Agiles Vorgehen - Also keine strikte Hierarchie
+Tägliches 10 minütiges Stand-up-meeting? Jeder stellt vor was er am letzten Tag bearbeitet hat, welche
+Probleme auftraten, und was er sich für den Tag vorgenommen hat. So können Teammitglieder sich verständigen
+(Frontend/Backend) und sich gegenseitig bei Problemen helfen. Die erfahrenen Entwickler sind so auch immer 
+im Wissen, was andere evtl. weniger erfahrene Teammitglieder für Probleme haben, und können gegenfalls unter
+die Arme greifen.
+Einmal im Monat - gemeinsames Dev Frühstück, bei dem jedes Teammitglied in einer kleinen Präsentation 
+vorstellen kann, was und wie es implementiert hat.
+
+
+Toolplanung
+Mattermost - Teamkommunikation, schnell und flexibel in Gruppen
+Git/Gitlab - Versionskontrolle, Ticketsystem, QA über Mergerequests
+Toolplanung - Projektspezifisch
+Frontend werden wir dieses JFrame benutzen?
+Was fällt hier noch unter Tools?
+	
+Personalmanagement und Qualitätsmanagement
+Gehört so wie es im Template des Managementplans definiert wird evtl. nicht zu den Teilaufgaben 
+dieser Abgabe, und steht auch nicht auf dem Aufgabenblatt. 
+Sollte aber dennoch nicht komplett ignoriert werden? Was sagt ihr?
+Gedanken:
+Einige der obengenannten Punkte sind sicher im Personalmanagement relevant.
