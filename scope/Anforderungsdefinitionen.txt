@@ -1,0 +1,32 @@
+Struktur:
+Funktion
+Beschreibung
+Eingabe
+Ausgabe
+Vorbedingungen
+Nachbedingungen
+
+Beispiel:
+Registrierung
+Nutzer erstellt Account
+Nutzerdaten
+Verifikationsmail
+gültige Emailadresse, alle Datenfelder ausgefüllt, optional: Zahlungsoption anlegen
+Nutzerprofil wird angelegt
+
+TODO (zu ergänzen):
+Login
+Passwort vergessen?
+Verzeichnis erstellen
+Verzeichnis löschen
+Einladung zur gemeinsamen Verwaltung
+Dateien Entfernen, Anlegen, Kopieren, Ausschneiden, Umbenennen, Eigenschaften
+Herunterladen auf lokalen Speicher
+Nutzerprofil bearbeiten
+verbrauchtes und maximales Datenvolumen abrufen
+maximales Datenvolumen vergrößern
+
+Wichtig zu erwähnen: Jede Funktion muss sowohl im Frontend als auch im Backend implementiert werden.
+Am besten in kleinen Tabellen im Managementplan integrieren?
+
+
