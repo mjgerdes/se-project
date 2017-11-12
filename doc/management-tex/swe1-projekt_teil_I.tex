@@ -85,7 +85,6 @@
 % Erm"aglicht das Zusammenf"agen mehrerer Zeilen einer Tabelle.
 %
 \usepackage{multirow}
-
 %
 % Legt fest, welche Sprache in der Bibliographie verwendet werden soll.
 %
@@ -174,6 +173,7 @@
       \ \\
       \ \\
       Projektarbeit -- Teil I \\
+      Gruppe 5
       \ \\
       \ \\
     }
@@ -196,11 +196,11 @@
     \begin{tabularx}{\textwidth}{ l X X }
       \emph{Autoren}:	&                   &	\emph{Betreuer}:        \\
                   	&                   &                           \\
-      Vorname Name	& (Mat-Nr.\ 123456) &	Prof. Dr.\ Christian Hammer \\
-      Vorname Name	& (Mat-Nr.\ 123456) &	M. Sc.  Sascha Gross \\
-      Vorname Name	& (Mat-Nr.\ 123456) &	Günther Wullaert  \\
-      Vorname Name	& (Mat-Nr.\ 123456) &	Juliane Scherlitzki    \\
-      Vorname Name	& (Mat-Nr.\ 123456) &	 \\
+      Marco Akrutat	& (Mat-Nr.\ 771933) &	Prof. Dr.\ Christian Hammer \\
+      Marius Gerdes	& (Mat-Nr.\ 772451) &	M. Sc.  Sascha Gross \\
+      Ariane Müting	& (Mat-Nr.\ 775943) &	Günther Wullaert  \\
+      Sebastian Kunst	& (Mat-Nr.\ 781823) &	Juliane Scherlitzki    \\
+      Aza Taha	& (Mat-Nr.\ 767351) &	 \\
     \end{tabularx}
 
     \vfill
@@ -220,91 +220,49 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Daten}
-In diesem Abschnitt sollen die wichtigsten Daten zu dem Projekt dargestellt
-werden. Dazu z"ahlen Beginn und Ende des Projektes, beteiligte Personen
-innerhalb des Projekt-Teams und beteiligte Personen au"serhalb des Projekt-Teams.
 
 \subsection{Teilnehmer}
-Folgende Tabelle kann als Vorlage verwendet werden:
 
 \begin{tabular}{|c|c|c|c|c|}
 \hline
 \textbf{Name} &\textbf{Vorname} & \textbf{Position} &\textbf{intern/extern} &
 \textbf{Kontakt (E-Mail)}\\\hline
-Jenkins & Joe     & Team-Leader            & intern &\\\hline
-Kloth   & Michael & Modellierer            & intern &\\\hline
-Setsche & Gregor  & Programmierer          & intern &\\\hline
-Gruber  & Stephan & Projekt-Manager        & intern &\\\hline
-M"uller & Anton   & Auftraggeber           & extern &\\\hline
-Mendel  & Juliane & Leitende Endanwenderin & extern &\\\hline
+Akrutat & Marco     & Full Stack Developer / Teamleader           & intern & akrutat@uni-potsdam.de\\\hline
+Gerdes   & Marius & Senior Backend Developer          & intern & mgerdes@uni-potsdam.de\\\hline
+Müting & Ariane  & Senior Frontend Developer         & intern & friederike.mueting@uni-potsdam.de\\\hline
+Kunst  & Sebastian & Junior Frontend Developer       & intern & sekunst@uni-potsdam.de\\\hline
+Taha & Aza   & Werkstudent           & intern & aza.taha@uni-potsdam.de\\\hline
+Groß  & Sascha & Leitender Endanwender & extern & saschagross@uni-potsdam.de\\\hline
 \end{tabular}
 
-Externe beteiligte Personen k"onnen wichtig sein, wenn konkrete Absprachen
-bez"uglich der Benutzung (User Stories) gekl"art werden m"ussen.
-
-Wichtig ist, zu beachten, dass pers"onliche Daten vertraulich behandelt werden.
-
 \section{Scope Management}
-Das Scopemanagement besch"aftigt sich mit der Bestimmung welche
-Arbeit zum und welche Arbeit nicht zum Projekt geh"ort. So l"asst sich der
-Prozess in folgende Hauptprozesse \cite{SCHW09} unterteilen:
-\begin{itemize}
-  \item Bestimmung aller Anforderungen,
-  \item Definition der Aufgabendefinition,
-  \item Work Breakdown Structure erstellen,
-  \item Pr"ufen und Kontrolle der Aufgaben.
-\end{itemize}
+\begin{figure}
+\centering
+\includegraphics[page=1,width=\textwidth,height=.95\textheight,keepaspectratio] {ProjectStructure.pdf}
+\caption{Work Breakdown Structure}
+\end{figure}
 
+Das Projekt erfordert sowohl die Implementierung eines Front-Ends, welches als Eingabefläche für die Benutzer dient, sowie die Implementierung des Back-Ends, dem eigentlichen Kernsystem. 
 
 \subsection{Aufgabendefinition}
-Zur Bestimmung der Anforderungen ist eine Analyse des Anforderungsdokuments
-n"otig. Aus dieser sollte hervorgehen welche Aufgaben gemacht werden m"ussen, bis wann diese gemacht werden m"ussen und zu welchem Preis. Der Preis spielt
-hier in diesem speziellen Projekt keine Rolle. Die o.g. Aufgaben sollten so
-fein wie m"oglich aufgeteilt werden, um sp"ater eine gute Aufgabenverteilung
-zu erreichen. Im letzten Schritt werden die erstellten Anforderungen "uberpr"uft
-und die laufende Arbeit bez"uglich dieser kontrolliert.
 
-\section{Qualit"atsmanagement}
-In diesem Abschnitt wird beschrieben, wie die Qualit"at der Projektergebnisse
-sichergestellt wurde. Wichtige Aspekte sind dabei der Grad der Konformit"at zu
-den Anforderungen und die Eignung zur Nutzung. Dabei ist zu beschreiben, wie
-sichergestellt wurde, dass die Projekt-Prozesse und die (Teil-) Ergebnisse, die
-durch die Anforderung beschriebene Spezifikation erf"ullen. Beziehungsweise wie
-sichergestellt wurde, dass das Produkt so wie vorgesehen genutzt werden kann.
+Die Anforderungen an das Front-End sind eine hohe Effizienz, und Effektivität. Hierzu wird eine möglichst intuitive Oberfläche implementiert, die den Normen der ISO9421 "Ergonomie der Mensch-System-Interaktion" entspricht. Die Aufgaben sind hierbei Implementierung und Design des Loginportals, sowie des Dashboards und der Profilverwaltung. Hierbei wird Wert darauf gelegt für den Nutzer ansprechende Werbeflächen zu schaffen, die die Funktionalität des Produktes nicht beeinträchtigen.
 
-Im Qualit"atsmanagement gibt es unter Anderem folgende wichtige Prozesse, die
-vom Manager ausgef"uhrt werden m"ussen:
-\begin{itemize}
-  \item Qualit"at Planung
-  \item Qualit"at Sicherung
-  \item Qualit"at Kontrolle
-\end{itemize}
+Die Anforderungen an das Back-End sind unter anderem eine hohe Ausfallsicherheit, sowie eine geringe Zugriffslatenz. In der Nutzerverwaltung muss die Sicherheit der Daten gewährleistet werden. Im Bereich der Dateiverwaltung legen wir Wert auf eine reibungslose Synchronisation zwischen mehreren Benutzern. Die Implementierung einer primitiven Versionskontrolle wird ebenfalls umgesetzt.
+
+Aus den Anforderungen ergibt sich die Work-Breakdown-Structure (s. Abbildung 1).
+
+\section{WIP Qualit"atsmanagement}
 
 \subsection{Qualit"at Planung}
-Hier sollen die f"ur das Projekt relevanten Qualit"ats-Standards identifiziert
-werden. Dazu z"ahlt zum Beispiel die "Ubersichtlichkeit und Intuitivit"at von
-Diagrammen.
+
+unit-tests, e2e tests
 
 \subsection{Qualit"at Sicherung}
-Hier soll beschrieben werden, wie die Qualit"at der Ergebnisse gesichert wurde.
-Beispielsweise k"onnten die Teilergebnisse auf die Erf"ullung der
-Qualit"ats-Eigenschaften in konkreten Abst"anden "uberpr"uft worden sein.
 
-Wichtige Aspekte der Qualit"at sind die Funktionalit"at (Wurden die vorgesehenen
-Funktionen integriert?), die Features (Wurden W"unsche von Endanwendern, die die
-Benutzbarkeit betreffen erf"ullt?), Outputs (Sind Ausgaben, die das System macht
-f"ur einen Benutzer (intuitiv) verst"andlich?) , Performanz
-(Wie gut/schnell/effizient f"uhrt das System die Prozesse aus?),
-Zuverl"assigkeit (Arbeitet das Produkt bei gew"ohnlicher Nutzung einwandfrei)
-und Wartbarkeit.
-
-Wichtig ist nat"urlich auch, ob aufgrund nicht erf"ullter
-Qualit"ats-Eigenschaften das Projekt angepasst oder Teile erneut erarbeitet
-werden mussten und welche Ursachen zu der ungen"ugenden Qualit"at f"uhrten.
+QA über Mergerequests
 
 \subsection{Qualit"at Kontrolle}
-Wurden die Sicherungsma"snahmen auch ausgef"uhrt und in welcher Weise wurde dies
-dokumentiert?
 
 \section{Personal Management}
 Das Personalmanagement umfasst die Prozesse, die erforderlich sind, um einen
