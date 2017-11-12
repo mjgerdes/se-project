@@ -253,15 +253,11 @@ Die Anforderungen an das Back-End sind unter anderem eine hohe Ausfallsicherheit
 
 Aus den Anforderungen ergibt sich die Work-Breakdown-Structure (s. Abbildung 1).
 
-\section{WIP Qualit"atsmanagement}
+\section{Qualit"atsmanagement}
 
 \subsection{Qualit"at Planung}
 
-unit-tests, e2e tests
-
 \subsection{Qualit"at Sicherung}
-
-QA über Mergerequests
 
 \subsection{Qualit"at Kontrolle}
 
@@ -281,122 +277,51 @@ Es wird in zwei-wöchigen Sprints gearbeitet und alle vier Wochen eine Rücksprach
 Um einen reibungslosen Ablauf der zwei-wöchigen Sprints zu gewährleisten gibt es zudem täglich ein zehn-minütiges Standup-Meeting, in dem jeder Entwickler vorstellen kann, was er am Vortag getan hat, welche Probleme auftraten, gegenfalls ob es eine Lösung gibt, und was er sich für den Tag vorgenommen hat. Dadurch ist jeder Entwickler im Bilde darüber, was die anderen gerade machen. Außerdem kann man sich gegenseitig bei Problemen helfen, und Synergien werden so angeregt und gefördert.
 
 \section{Time Management}
-Das Time Management besch"aftigt sich mit dem zeitlichen Ablauf eines Projektes.
-Es beschreibt die Prozesse, welche notwendig sind, um das Projekt p"unktlich zu
-liefern. Dazu geh"oren folgende Hauptprozesse:
-\begin{itemize}
-  \item Definition der Aktivit"aten,
-  \item Bestimmung der Abh"angigkeiten zwischen den Aktivit"aten,
-  \item Absch"atzung der Ressourcen f"ur jede Aktivit"at,
-  \item Absch"atzung der Dauer der Aktivit"aten,
-  \item Entwurf eines Zeitplans,
-  \item Kontrolle des Zeitplans.
-\end{itemize}
-Die Definition von Aktivit"aten bezieht sich auf Erstellung von Teilen (nicht
-nur Teilsystemen) der Gesamtaufgabe. Als n"achsten Schritt m"ussen zeitliche
-Abh"angigkeiten
-zwischen den Aktivit"aten "uberpr"uft und im Nachhinein bei der Erstellung des
-Zeitplans ber"ucksichtigt werden. Als n"achsten Schritt macht man eine
-Aufwandssch"atzung zur Bestimmung der ben"otigten Ressourcen (z.B. Arbeiter,
-Equipment) und der Aktivit"atsdauer. Stellen Sie einen Bezug zu den Ressourcen
-her. Auf der Basis der vorher beschriebenen Voraussetzungen erstellt man einen
-Zeitplan, welcher alle Anforderung erf"ullt. Hierf"ur werden oft zeitliche
-Diagramme in Form von Tabellen oder Gantt-Charts erstellt. Als letztes bleibt
-nur noch die laufende "Uberpr"ufung der Einhaltung von Meilensteinen und ggf.
-eine Anpassung des Zeitplans.
 
 \subsection{Aufwandssch"atzung}
 
+Eine Aufwandsschätzung für das Projekt wurde mithilfe des intermediate COCOMO-Verfahrens durchgeführt. Das Projekt wurde als 'organic' eingestuft, auf etwa fünf KDSI geschätzt und der Gesamtkostenfaktor M wie folgt ermittelt:\\\\
+\texttt{
+RELY 1.15 CPLX 0.85 TIME 1.11 ACAP 1 PCAP 1.17 LEXP 1.07 TOOL 1 SCED 1\\\\
+M = 1.36\\\\}
+Damit ergibt sich ein Projektaufwand von 23,6 Personenmonaten.
+In Anbetracht der Ressourcen unseres Teams ergibt sich eine Projektdauer von etwa fünfeinhalb Monaten. Das entspricht elf Sprints. Unser Full-Stack-Developer wird sicherstellen, dass die Projektdauer der Teilsysteme nicht zu stark von einander abweichen und das Gesamtprojekt im ermittelten Zeitrahmen bleibt.
+
+Zeitlich wird das Projekt in fünf Meilensteine gegliedert welche unterschiedliche Features enthalten. Jeder Meilenstein sollte etwa zwei Sprints in Anspruch nehmen (siehe Projektplan).
+
 \subsection{Projektplan}
+
+\begin{figure}[h]
+\centering
+\includegraphics[page=1,width=\textwidth,height=.95\textheight,keepaspectratio] {gantt.png}
+\caption{Gantt-Chart, Rot: Meilenstein, Blau: Sprint}
+\end{figure}
 
 \subsection{Soll/Ist Vergleich}
 
 \section{Besonderheiten}
 
 \subsection{Beziehungen zwischen den Aufgabenteilen}
-In diesem Kapitel werden die Besonderheiten des Projekts festgehalten. Der
-Projektleiter soll dokumentieren, welche Auff"alligkeiten bemerkbar geworden
-sind. Dazu z"ahlen die Zusammenh"ange in dem Projekt zwischen den einzelnen
-Aufgaben. Wenn eine Aufgabe mit einer anderen sich sehr gut kombinieren l"asst,
-oder sogar bei der Anfertigung Synergie Effekte entstehen (die Qualit"at der
-nachfolgenden Aufgabe verbessert sich erheblich, oder der Zeitaufwand wird
-geringer), dann geh"oren diese Beobachtungen in diesen Abschnitt.
 
-Desweiteren ist es ratsam die Auff"alligkeiten in diesem Kapitel zu beschreiben
-. Es ist wichtig zu identifizieren, wie sich das Verhalten der Auftraggeber auf
-den Projektverlauf widergespiegelt hat. Wenn diese zum Beispiel nur schwammige
-Antworten gegeben haben, welche die Arbeit nur verz"ogert haben, soll dieses
-festgehalten werden.
 
 \subsection{Externe Verz"ogerungen}
-Externe Faktoren geh"oren ebenso in diesen Abschnitt. Unter externen Faktoren
-kann die Einflussnahme von h"oherer Gewalt (Wetterbedingungen, Stromunterbrechung
-usw.) mit einbezogen werden.  Eine Intervention seitens des Auftraggeber oder
-dritter, welche erheblichen Einfluss auf die Projektplanung und den Verlauf haben,
-kann hier beschrieben werden.
 
-Die Besonderheiten der politischen und ethischen Seite des Projekts werden
-aufgenommen. Es k"onnen Projekte im milit"arischen oder medizinischen Bereich
-stattfinden, welche besondere Auflagen seitens des Gesetzgebers mit sich bringen
-und wodurch au"serordentliche Rahmenbedingungen entstehen.
 
 \section{Organisation}
 
 \subsection{Abrechnung des Time- und Ressourcenmanagements}
-In diesem Abschnitt werden die organisatorischen Einzelheiten des Projekts
-festgehalten. In erster Linie ist das Verhalten der Teilnehmer zu beschreiben.
-Die Fragen: Wie p"unktlich sind die Mitarbeiter? Wie oft gab es Verz"ogerungen?
-Wurden die Aufgaben in angemessener Qualit"at erledigt? sind hier zu beantworten.
-In diesem Zusammenhang kann kurz auf die Struktur der Aufgabenpakete eingegangen
-werden, die Aufteilung der einzelnen Aufgaben und das Ma"s der Produktivit"at
-definiert werden. Der angefertigte Stundenzettel der Mitarbeitern dient hier
-als Grundlage.
+
 
 \subsubsection{Stundenzettel}
-Angaben zu den Arbeitszetteln von den Mitarbeitern sowie Aufnahme der
-Arbeitsaufteilung. Beschreibung der ausgew"ahlten Methode zur Erfassung
-der Arbeitszeit.
+
 
 \subsection{Kommunikations- und Toolplanung}
-Ein weiterer Aspekt ist die Kommunikation in der Gruppe. Wie wurde diese
-organisiert? Gab es regelm"a"sige Treffen oder nur ein Kick-Off Meeting
-und dann nur eMail basierte Kommunikation? Erfolgte die Kommunikation nur
-"uber eMail, oder wurden Skype, ICQ, Foren oder anderen Kommunikationsmittel
-eingesetzt? Wurde ein interner Gruppenleiter bestimmt und der Kontakt zur
-Gruppe erfolgte "uber ihn, oder gab es direkte Kommunikation mit dem
-Projektmanager? Wie setzten sich die Mitglieder der Gruppe untereinander
-in Verbindung? Diese und weitere Fragen zur Kommunikation in der Gruppe
-sollten in diesem Kapitel behandelt werden.
 
-Das Ziel des Kommunikationsmanagement ist es im Rahmen des Projekts
-rechtzeitig und angemessen die Erzeugung, Sammlung, Verbreitung, Speicherung
-und L"oschung von Projektinformationen zu gew"ahrleisten.
-
-Hauptprozesse sind:
-\begin{itemize}
-  \item Projektbeteiligte identifizieren,
-  \item Planung der Kommunikation,
-  \item Verbreitung von Informationen,
-  \item Steuerung der Erwartungen der Projektbeteiligten,
-  \item Bericht "uber die Leistungen.
-\end{itemize}
+Wie bereits in der Sektion Personalmanagement erwähnt gibt es ein tägliches Standup-Meeting sowie ein monatliches Dev-Frühstück. Darüber gibt es eine Gruppe für das Projekt auf unserem firmeneigenen mattermost-Server, die zur weiteren Kommunikation innerhalb des Teams benutzt werden kann.
+Zur Versionkontrolle wird ein Projekt in unserem Gitlab angelegt.
 
 \subsection{Urlaub und Krankheit}
-Im Anschluss zu dem Kommunikationsaspekt soll auch die Verf"ugbarkeit der
-Projektteilnehmer festgehalten werden.  Die Teilnehmer k"onnten Urlaub haben
-oder "uber einen l"angeren Zeitraum krank werden und somit f"ur die Arbeit
-nicht zur Verf"ugung stehen. Diese Details sollten ebenso in diesem Abschnitt
-dokumentiert werden.
 
-\section{Anhang}
-In dem Anhang befinden sich alle angefertigten Unterlagen und Diagramme
-welche vom Projektmanager w"ahrend der Projektlaufzeit zusammengestellt
-wurden. Des Weiteren k"onnen die Ausgaben der Projektmanagement Software
-hier mit aufgef"uhrt werden.
-
-Unter Anderem geh"oren auch die Protokolle, Stundenzettel, Gantt Chart
-Diagramme, Arbeitspaket Beschreibungen der jeweiligen Woche und weitere
-Unterlagen auch in diesen Abschnitt.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % dokument: bibliographie
