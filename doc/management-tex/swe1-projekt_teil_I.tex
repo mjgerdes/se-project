@@ -223,30 +223,31 @@
 
 \subsection{Teilnehmer}
 
-\begin{tabular}{|c|c|c|c|c|}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
 \hline
-\textbf{Name} &\textbf{Vorname} & \textbf{Position} &\textbf{intern/extern} &
-\textbf{Kontakt (E-Mail)}\\\hline
-Akrutat & Marco     & Full Stack Developer / Teamleader           & intern & akrutat@uni-potsdam.de\\\hline
-Gerdes   & Marius & Senior Backend Developer          & intern & mgerdes@uni-potsdam.de\\\hline
-Müting & Ariane  & Senior Frontend Developer         & intern & friederike.mueting@uni-potsdam.de\\\hline
-Kunst  & Sebastian & Junior Frontend Developer       & intern & sekunst@uni-potsdam.de\\\hline
-Taha & Aza   & Werkstudent           & intern & aza.taha@uni-potsdam.de\\\hline
-Groß  & Sascha & Leitender Endanwender & extern & saschagross@uni-potsdam.de\\\hline
+\textbf{Name} &\textbf{Vorname} & \textbf{Position} &\textbf{intern/extern}\\\hline
+Akrutat & Marco     & Full Stack Developer / Teamleader           & intern\\\hline
+Gerdes   & Marius & Sen. Backend Developer          & intern \\\hline
+Müting & Ariane  & Sen. Frontend Developer         & intern \\\hline
+Kunst  & Sebastian & Junior Frontend Developer       & intern\\\hline
+Taha & Aza   & Werkstudent / Scrummaster           & intern\\\hline
+Groß  & Sascha & Leitender Endanwender & extern\\\hline
 \end{tabular}
+\end{center}
 
 \section{Scope Management}
-\begin{figure}
+
+Das Projekt erfordert sowohl die Implementierung eines Front-Ends, welches als Eingabefläche für die Benutzer dient, sowie die Implementierung des Back-Ends, dem eigentlichen Kernsystem. 
+
+\begin{figure}[h]
 \centering
 \includegraphics[page=1,width=\textwidth,height=.95\textheight,keepaspectratio] {ProjectStructure.pdf}
 \caption{Work Breakdown Structure}
 \end{figure}
-
-Das Projekt erfordert sowohl die Implementierung eines Front-Ends, welches als Eingabefläche für die Benutzer dient, sowie die Implementierung des Back-Ends, dem eigentlichen Kernsystem. 
-
 \subsection{Aufgabendefinition}
 
-Die Anforderungen an das Front-End sind eine hohe Effizienz, und Effektivität. Hierzu wird eine möglichst intuitive Oberfläche implementiert, die den Normen der ISO9421 "Ergonomie der Mensch-System-Interaktion" entspricht. Die Aufgaben sind hierbei Implementierung und Design des Loginportals, sowie des Dashboards und der Profilverwaltung. Hierbei wird Wert darauf gelegt für den Nutzer ansprechende Werbeflächen zu schaffen, die die Funktionalität des Produktes nicht beeinträchtigen.
+Die Anforderungen an das Front-End sind eine hohe Effizienz, und Effektivität. Hierzu wird eine möglichst intuitive Oberfläche implementiert, die den Normen der ISO9421-Ergonomie der Mensch-System-Interaktion entspricht. Die Aufgaben sind hierbei Implementierung und Design des Loginportals, sowie des Dashboards und der Profilverwaltung. Hierbei wird Wert darauf gelegt für den Nutzer ansprechende Werbeflächen zu schaffen, die die Funktionalität des Produktes nicht beeinträchtigen.
 
 Die Anforderungen an das Back-End sind unter anderem eine hohe Ausfallsicherheit, sowie eine geringe Zugriffslatenz. In der Nutzerverwaltung muss die Sicherheit der Daten gewährleistet werden. Im Bereich der Dateiverwaltung legen wir Wert auf eine reibungslose Synchronisation zwischen mehreren Benutzern. Die Implementierung einer primitiven Versionskontrolle wird ebenfalls umgesetzt.
 
@@ -265,49 +266,24 @@ QA über Mergerequests
 \subsection{Qualit"at Kontrolle}
 
 \section{Personal Management}
-Das Personalmanagement umfasst die Prozesse, die erforderlich sind, um einen
-m"oglichst effektiven Einsatz der am Projekt beteiligten Mitarbeiter zu
-organisieren.
 
-Hauptprozesse \cite{SCHW09} sind:
-\begin{itemize}
-  \item Erstellung eines Planes zur Mitarbeiterentwicklung,
-  \item Zusammenstellung des Projektteams,
-  \item Entwicklung des Projektteams,
-  \item Verwaltung des Projektteams.
-\end{itemize}
+Um einen möglichst effektiven Einsatz der am Projekt beteiligten Entwickler zu gewährleisten, haben wir uns entschieden agil vorzugehen und nach Scrum zu entwickeln.
 
 \subsection{Aufgabenverteilung}
-In diesem Abschnitt besch"aftigt man sich mit der Verwaltung der Mitarbeiter,
-die zur Verf"ugung standen und wie und aus welchem Grund sie in der
-konkreten Art und Weise eingesetzt wurden.
 
-Hierbei ist zu beschreiben, welche Projekt-Mitglieder wof"ur eingesetzt wurden
-und wie hoch die Arbeitslast geplant war. Ein wichtiger Gesichtspunkt sind die
-Fertigkeiten und die Erfahrung, die die Projekt-Mitglieder haben und wie diese
-genutzt wurden, um das Projekt fertigzustellen.
-Mussten die Mitglieder eingearbeitet werden? Inwieweit wurde dies vom Management
-unterst"utzt?
+Das Entwicklerteam für dieses Projekt besteht aus fünf Leuten, vier Vollzeitangestellten Entwicklern und einem Werkstudenten in Teilzeit.
+Als Full-Stack-Entwickler deckt unser Teamleiter beide großen Bereiche des Projektes ab. Im Bereich des Back-End und Front-End gibt es je einen erfahrenen Entwickler, unterstützt durch einen Berufseinsteiger im Bereich des Front-End und einen Werkstudenten im Bereich des Back-End.
 
-Es gibt Personen, die aufgrund ihres Auftretens auf andere Mitarbeiter Vertrauen
-und F"uhrungsqualit"at/Autorit"at ausstrahlen. Wurden solche Personen genutzt,
-um den Gruppenzusammenhalt zu f"ordern?
+Unser erfahrenener Back-End-Entwickler Marius Gerdes wird außerdem die Rolle des Project Owners übernehmen und den Kontakt mit dem Kunden pflegen.
 
-Wurden Konzepte zur Motivation angewandt, um den Arbeitswillen zu unterst"utzen?
-Wie wurde verhindert, dass einzelne Projekt-Mitglieder "uberlastet werden?
+Es wird in zwei-wöchigen Sprints gearbeitet und alle vier Wochen eine Rücksprache mit dem Kunden gehalten. Hierzu gibt es alle vier Wochen ein Dev-Frühstück, zu dem auch der Kunde eingeladen ist, bei dem die Projektteilnehmer in einer kurzen Präsentation erläutern, welche Features sie implementiert haben, und wie sie dies taten. So hat jeder Entwickler einen Einblick in die Arbeit des anderen.
 
-Wurden Teilgruppen gebildet, um das Projekt in kleinere Teile aufl"osen zu
-k"onnen? Wie wurde sichergestellt, dass die Zusammenarbeit zwischen den
-Teilgruppen funktioniert?
-
-Mussten w"ahrend der Laufzeit des Projektes weitere Mitarbeiter in das
-Projekt-Team integriert werden. Wie wurde verhindert, dass die Synergien
-innerhalb der Gruppe gest"ort wurden?
+Um einen reibungslosen Ablauf der zwei-wöchigen Sprints zu gewährleisten gibt es zudem täglich ein zehn-minütiges Standup-Meeting, in dem jeder Entwickler vorstellen kann, was er am Vortag getan hat, welche Probleme auftraten, gegenfalls ob es eine Lösung gibt, und was er sich für den Tag vorgenommen hat. Dadurch ist jeder Entwickler im Bilde darüber, was die anderen gerade machen. Außerdem kann man sich gegenseitig bei Problemen helfen, und Synergien werden so angeregt und gefördert.
 
 \section{Time Management}
 Das Time Management besch"aftigt sich mit dem zeitlichen Ablauf eines Projektes.
 Es beschreibt die Prozesse, welche notwendig sind, um das Projekt p"unktlich zu
-liefern. Dazu geh"oren folgende Hauptprozesse \cite{SCHW09}:
+liefern. Dazu geh"oren folgende Hauptprozesse:
 \begin{itemize}
   \item Definition der Aktivit"aten,
   \item Bestimmung der Abh"angigkeiten zwischen den Aktivit"aten,
@@ -396,7 +372,7 @@ Das Ziel des Kommunikationsmanagement ist es im Rahmen des Projekts
 rechtzeitig und angemessen die Erzeugung, Sammlung, Verbreitung, Speicherung
 und L"oschung von Projektinformationen zu gew"ahrleisten.
 
-Hauptprozesse \cite{SCHW09} sind:
+Hauptprozesse sind:
 \begin{itemize}
   \item Projektbeteiligte identifizieren,
   \item Planung der Kommunikation,
