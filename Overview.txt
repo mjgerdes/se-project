@@ -11,6 +11,9 @@ Nach dem agilen Prinzip können wir dann in sogenannten Sprints, die uns zugetei
 bearbeiten. Nach jedem Sprint gibt es eine Rücksprache mit dem Kunden und wir können das System
 inkrementell anpassen und verfeinern, bis zur Produktreife.
 
+- marius:
+Klingt gut. 
+
 Zeitplanung
 Vorraussetzung: Cocomo/Functionpoint Verfahren. (Teil des Scopes?)
 Ganttchart:	
@@ -21,6 +24,9 @@ Ganttchart:
 	Strukturierung der ersten Sprints bei evtl. Abhängigkeiten
 	Wie lange soll ein Sprint dauern? 2 Wochen?
 
+- marius:
+Sprints sind soweit ich weiß 1 - 4 Wochen lang. Für mich klingt bei uns 2 wochen länge gut, wobei ich vorschlagen würde den ersten Sprint auf 1 Woche anzusetzen, um uns erstmal an den Workflow zu gewöhnen und eventuelle Probleme schnell zu beheben.
+
 Kommunikationsplanung
 Agiles Vorgehen - Also keine strikte Hierarchie
 Tägliches 10 minütiges Stand-up-meeting? Jeder stellt vor was er am letzten Tag bearbeitet hat, welche
@@ -28,6 +34,12 @@ Probleme auftraten, und was er sich für den Tag vorgenommen hat. So können Tea
 (Frontend/Backend) und sich gegenseitig bei Problemen helfen. Die erfahrenen Entwickler sind so auch immer 
 im Wissen, was andere evtl. weniger erfahrene Teammitglieder für Probleme haben, und können gegenfalls unter
 die Arme greifen.
+
+ - marius:
+Ich bin dafür, dass wir dies wirklich - und nicht nur fiktiv tun. Vielleicht können wir ja unter der Woche so 1 - 2 mal eine kurze Telefonkonferenz haben. Also nicht unbedingt jeden Tag aber zumindest, dass man sich öfter und vor allem regeläßig abspricht.
+Ich will außerdem anmerken, dass, so wie ich es verstehe, diese kurzen meetings nicht als status reports gedacht sind. D.h. zum einen sie sollen kurz bleiben (<15 minuten) und sie dienen nicht der Kontrolle ob Leute auch ja fortschritt machen. Es geht denke ich eher um ein "checking in" um eventualle blockaden zu vermeiden.
+Ich schlage mal einfach vor wir machen sowas am Montag,Mittwoch und Samstag. Eure Meinung?
+
 Einmal im Monat - gemeinsames Dev Frühstück, bei dem jedes Teammitglied in einer kleinen Präsentation 
 vorstellen kann, was und wie es implementiert hat.
 
@@ -39,9 +51,18 @@ Toolplanung - Projektspezifisch
 Frontend werden wir dieses JFrame benutzen?
 Was fällt hier noch unter Tools?
 	
+- marius:
+kA wegen jframe. Ich denke programmier IDE's sind Tools. Ggf. auch bibliotheken oder Test-Frameworks. Für uns außerdem zur kommunikation Email und What's App.
+Ich würde außerdem vorschlagen das Agile vorgehen durch eine Kanban chart zu ergänzen. Da können wir aber mal besser persönlich drüber reden, schaut mal nach "kanban google talk" auf youtube, wenn es euch interressiert.
+
+
 Personalmanagement und Qualitätsmanagement
 Gehört so wie es im Template des Managementplans definiert wird evtl. nicht zu den Teilaufgaben 
 dieser Abgabe, und steht auch nicht auf dem Aufgabenblatt. 
 Sollte aber dennoch nicht komplett ignoriert werden? Was sagt ihr?
 Gedanken:
 Einige der obengenannten Punkte sind sicher im Personalmanagement relevant.
+
+- marius:
+Ich denke auch, dass dies für die Abgabe noch nicht relevant ist. Bei Personal reicht es erstmal grob Rollen eingeteilt zu haben, glaube ich. 
+Qualitätsmanagement heißt für mich vor allem Testing, d.h. Unit test frameworks, Funktionale tests, Tests zur sicherung des ISO standards usw. Kann aber natürlich auch Rückmeldung des Kunden meinen.
